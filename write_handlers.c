@@ -1,7 +1,6 @@
-write_handlers.c‏
 #include "main.h"
 
-/************************* WRITE HANDLE *************************/
+/************************* WRITE HANDLES *************************/
 /**
  * handle_write_char - Prints a string
  * @c: char types.
@@ -24,7 +23,6 @@ int handle_write_char(char c, char buffer[],
 
 	if (flags & F_ZERO)
 		padd = '0';
-
 	buffer[i++] = c;
 	buffer[i] = '\0';
 
